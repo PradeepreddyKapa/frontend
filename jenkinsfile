@@ -17,7 +17,8 @@ pipeline {
 
             steps {
                 sh'''
-                  curl -v -u admin:admin --upload-file frontend.zip http://3.216.95.216:8081/repository/frontendtodo/frontend.zip
+                  curl -f -v -u admin:admin --upload-file frontend.zip http://3.216.95.216:8081/repository/frontendtodo/frontend.zip
+                  
                 '''
             }
         }
