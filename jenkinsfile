@@ -18,7 +18,7 @@ pipeline {
         stage ('Upload Artifacts'){
 
             steps {
-                sh'''
+                sh '''
                 curl -f -v -u admin:admin --upload-file frontend.zip http://172.31.12.138:8081/repository/frontend/frontend.zip
                 '''
             }
